@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous">
+        </script>
+        <script src="scripts/index.js"></script>
+
+    </head>
+    <body>
+        <div class="page home" id="home">
+            <div class="mask">
+
+            <nav class="navbar">
+                <span class="navbar__logo">
+                    <img src="./assets/Logo.png" alt="logo">
+                </span>
+                <div class="navbar__menu menu_on">
+                    <div class="menu__btn">
+                        <div class="btn__icon"></div>
+                    </div>
+                    <div class="menu__list">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Portfolio</li>
+                            <li>Blog</li>
+                            <li>Contacts</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="home__content content">
+                
+                <div class="scroll-down">
+
+                </div>
+                <div class="slider">
+
+                </div>
+                <div class="effect">
+
+                </div>
+            </div>            
+            </div>
+        </div>
+
+        <div class="page about" id="about">
+            <div class="about__content content"></div>
+        </div>  
+
+        <div class="page services" id="services">
+            <div class="mask">
+                <div class="services__content content"></div>
+            </div>
+        </div>
+
+        <div class="page portfolio" id="portfolio">
+            <div class="mask">
+                <div class="portfolio__content content"></div>
+            </div>
+        </div>
+        
+        <div class="page blog" id="blog">
+            <div class="blog__content content"></div>
+        </div>
+
+        <div class="page contact" id="contact">
+            <div class="mask">
+                <div class="contact__content content"></div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <ul>
+                <li class="active">
+                    <div class="number">01</div>
+                    <div class="dot"></div>
+                    <p>Home</p>
+                </li>
+                <li>
+                    <div class="number">02</div>
+                    <div class="dot"></div>
+                    <p>About</p>
+                </li>
+                <li>
+                    <div class="number">03</div>
+                    <div class="dot"></div>
+                    <p>Services</p>
+                </li>
+                <li>
+                    <div class="number">04</div>
+                    <div class="dot"></div>
+                    <p>Portfolio</p>
+                </li>
+                <li>
+                    <div class="number">05</div>
+                    <div class="dot"></div>
+                    <p>Blog</p>
+                </li>
+                <li>
+                    <div class="number">06</div>
+                    <div class="dot"></div>
+                    <p>Contact</p>
+                </li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li>
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 430.113 430.114" style="enable-background:new 0 0 430.113 430.114;" xml:space="preserve">
+                    <g>
+                        <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805   c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354   c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+                    </g>
+                    </svg>
+                </li>
+                <li>
+                    <svg id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;" xml:space="preserve">
+                    <g>
+                        <path d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876   c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404   c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067   c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769   C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192   c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178   c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947   c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828   c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39   C414.973,206.142,393.023,203.486,381.384,198.639z"/>
+                    </g>
+                    </svg>
+                </li>
+                <li>
+                    <svg id="blogger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;" xml:space="preserve">
+                    <g>
+                        <path d="M292.938,430.118c74.995,0,135.91-61.092,136.335-135.672l0.844-109.816l-1.269-5.974l-3.604-7.516   l-6.091-4.711c-7.915-6.21-48.015,0.42-58.81-9.388c-7.663-6.996-8.858-19.637-11.173-36.77   c-4.308-33.18-7.028-34.912-12.228-46.162C318.07,34.166,266.84,4.149,231.646,0h-95.332C61.316,0,0,61.181,0,135.908v158.538   c0,74.58,61.316,135.672,136.313,135.672H292.938z M138.05,111.032h75.581c14.431,0,26.117,11.714,26.117,25.951   c0,14.179-11.687,25.989-26.117,25.989H138.05c-14.433,0-26.096-11.815-26.096-25.989   C111.954,122.747,123.617,111.032,138.05,111.032z M111.954,292.439c0-14.234,11.663-25.86,26.096-25.86h153.577   c14.337,0,25.977,11.626,25.977,25.86c0,14.043-11.64,25.855-25.977,25.855H138.05   C123.617,318.294,111.954,306.482,111.954,292.439z"/>
+                    </g>
+                    </svg>
+                </li>
+                <li>
+                    <svg id="behance" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 430.123 430.123" style="enable-background:new 0 0 430.123 430.123;" xml:space="preserve">
+                    <g>
+                        <path d="M388.432,119.12H280.659V92.35h107.782v26.77H388.432z M208.912,228.895   c6.954,10.771,10.429,23.849,10.429,39.203c0,15.878-3.918,30.122-11.889,42.704c-5.071,8.326-11.367,15.359-18.932,21.021   c-8.52,6.548-18.607,11.038-30.203,13.437c-11.633,2.403-24.224,3.617-37.787,3.617H0V81.247h129.25   c32.579,0.53,55.676,9.969,69.315,28.506c8.184,11.369,12.239,25.011,12.239,40.868c0,16.362-4.104,29.454-12.368,39.401   c-4.597,5.577-11.388,10.65-20.378,15.229C191.675,210.236,202.007,218.086,208.912,228.895z M61.722,186.76h56.632   c11.638,0,21.046-2.212,28.292-6.634c7.241-4.415,10.854-12.263,10.854-23.531c0-12.449-4.784-20.712-14.375-24.689   c-8.244-2.763-18.792-4.186-31.591-4.186H61.722V186.76z M162.953,264.275c0-13.902-5.682-23.513-17.023-28.67   c-6.342-2.931-15.29-4.429-26.763-4.536H61.722v71.322h56.556c11.619,0,20.612-1.521,27.102-4.694   C157.084,291.863,162.953,280.76,162.953,264.275z M428.419,220.736c1.302,8.756,1.891,21.46,1.652,38.065H290.493   c0.77,19.266,7.421,32.739,20.035,40.449c7.607,4.835,16.83,7.196,27.63,7.196c11.388,0,20.67-2.879,27.815-8.797   c3.893-3.137,7.327-7.565,10.296-13.152h51.16c-1.34,11.379-7.5,22.92-18.57,34.648c-17.151,18.641-41.205,27.988-72.097,27.988   c-25.52,0-48.011-7.883-67.533-23.592C249.772,307.777,240,282.211,240,246.746c0-33.257,8.773-58.712,26.378-76.43   c17.67-17.751,40.474-26.586,68.583-26.586c16.661,0,31.68,2.978,45.079,8.965c13.357,5.993,24.396,15.425,33.09,28.388   C420.998,192.499,426.058,205.699,428.419,220.736z M378.062,225.73c-0.938-13.322-5.386-23.405-13.395-30.296   c-7.943-6.91-17.866-10.379-29.706-10.379c-12.886,0-22.836,3.708-29.906,10.996c-7.118,7.273-11.547,17.161-13.362,29.68H378.062   L378.062,225.73z"/>
+                    </g>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
