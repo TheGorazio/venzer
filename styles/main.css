@@ -40,7 +40,6 @@
       position: absolute;
       right: 20.5%;
       top: 45px;
-      z-index: 1;
       display: none; }
       .page.home .home__content .logo svg {
         width: 100%;
@@ -61,7 +60,7 @@
         border-bottom: 3px solid #b3b3b3; }
     .page.home .home__content .slider {
       text-transform: uppercase;
-      padding-left: -15000px;
+      padding-left: 0px;
       z-index: 2; }
       .page.home .home__content .slider h1 {
         font-size: 72px;
@@ -99,7 +98,8 @@
   top: 200px;
   left: 25px;
   width: 100px;
-  height: 200px; }
+  height: 200px;
+  display: none; }
   .pagination li {
     display: block;
     position: relative;
@@ -174,7 +174,8 @@
 
 .navbar {
   height: 50px;
-  padding: 20px; }
+  padding: 20px;
+  display: none; }
 
 .navbar__logo {
   float: left;
@@ -258,7 +259,8 @@
   top: calc(50% - 100px);
   right: -45px;
   width: 100px;
-  height: 200px; }
+  height: 200px;
+  display: none; }
   .socials ul li {
     display: block;
     padding-top: 10px;

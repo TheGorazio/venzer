@@ -1,4 +1,5 @@
 window.onload = function() {
+    var firstTime = true;
     startAnimation(0);
     /* pagination */
     var paginationList = $('.pagination ul li'),
@@ -59,10 +60,16 @@ window.onload = function() {
         console.log(`page${id} animation`);
         switch(id) {
             case 0:
+                if (firstTime) {
+                    firstTime = false;
+                    $('.pagination').fadeIn('slow');
+                    $('.socials').fadeIn('slow');
+                    $('.navbar').fadeIn('slow');
+                }
                 $('.slider').animate({
                     'padding-left': '150px'
                 }, 900);
-                $('.logo').fadeIn('slow');
+                $('.logo').fadeIn('slow')
                 break;
             default:
                 break;
