@@ -77,10 +77,10 @@ window.onload = function() {
                     'padding-left': '150px',
                     'opacity': '1'
                 }, 900);
-                 $('.slider').animate({
+                $('.slider').animate({
                     'right': '80%',
-                    'opacity': '.4'
-                }, 1700);
+                    'opacity': '.2'
+                }, 1200);
                 $('.logo').fadeIn('slow');
                 break;
             default:
@@ -138,6 +138,4 @@ window.onload = function() {
         }, 1000);
         return false;
     };
-
-
 };
