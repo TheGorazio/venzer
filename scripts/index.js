@@ -1,5 +1,7 @@
 window.onload = function() {
-    var firstTime = true;
+    var firstTime;
+    firstTime = true;
+    
     startAnimation(0);
     /* pagination */
     var paginationList = $('.pagination ul li'),
@@ -64,7 +66,9 @@ window.onload = function() {
                     firstTime = false;
                     $('.pagination').fadeIn('slow');
                     $('.socials').fadeIn('slow');
-                    $('.navbar').fadeIn('slow');
+                    $('.navbar').animate({
+                        'opacity': '1'
+                    }, 900);
                 }
                 $('.slider').animate({
                     'padding-left': '150px'
