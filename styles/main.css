@@ -34,6 +34,15 @@
   .page.home {
     background-image: url("../assets/header_background_2.jpg");
     position: relative; }
+    .page.home .slider {
+      font-size: 15em;
+      color: #b3b3b3;
+      font-family: 'Avenir LT Std 45 Book Oblique' sans-serif;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      bottom: -60px;
+      letter-spacing: 10px; }
     .page.home .home__content .logo {
       width: 35%;
       height: 100%;
@@ -58,30 +67,31 @@
         color: #646e78;
         padding-bottom: 15px;
         border-bottom: 3px solid #b3b3b3; }
-    .page.home .home__content .slider {
+    .page.home .home__content .topic {
       text-transform: uppercase;
       padding-left: 0px;
-      z-index: 2; }
-      .page.home .home__content .slider h1 {
+      z-index: 2;
+      opacity: 0; }
+      .page.home .home__content .topic h1 {
         font-size: 72px;
         font-family: 'Avenir LT Std 45 Book Oblique';
         letter-spacing: 25px; }
-      .page.home .home__content .slider p {
+      .page.home .home__content .topic p {
         color: #b3b3b3;
         color-size: 21px;
         font-family: 'Lato' sans-serif;
         letter-spacing: 9px;
         margin-bottom: 25px; }
-      .page.home .home__content .slider .more {
+      .page.home .home__content .topic .more {
         cursor: pointer;
         width: 200px;
         border-top: 3px solid #ff4200;
         padding-top: 15px;
         font-size: 14px;
         font-family: 'Avenir LT Std 45 Book Oblique'; }
-        .page.home .home__content .slider .more span {
+        .page.home .home__content .topic .more span {
           margin-right: 10px; }
-        .page.home .home__content .slider .more i {
+        .page.home .home__content .topic .more i {
           margin-right: 10px;
           color: #ff4200;
           font-size: 20px;
