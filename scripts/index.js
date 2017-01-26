@@ -59,6 +59,37 @@ window.onload = function() {
         smoothScrollTo(pages[1].offset);
     });
 
+    /* services menu */
+    var services = [
+            {
+                title: 'industrial design',
+                descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ullam sed eligendi consequuntur qui at doloremque, repellat, voluptatem dolore, consequatur eaque. Necessitatibus officia quod natus enim excepturi, cupiditate voluptates in!'
+            },
+            {
+                title: 'web design',
+                descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, minima a excepturi incidunt doloribus aspernatur eos odit inventore voluptate temporibus sequi laudantium dignissimos, dolorum voluptas in ipsum. Dignissimos facilis, dolore.'
+            },
+            {
+                title: 'photography',
+                descr: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis animi ullam non neque ipsam quo, laudantium dolore dolor molestias nesciunt magni! Iure impedit iste, eveniet quibusdam voluptatibus a facilis.'
+            }
+        ],
+        currentServiceIndex = 0,
+        currentService = $('.services__list ul li.active');
+
+    var serviceInfo = $('.service-info');
+    $('.services__list ul li').each(function(i, el) {
+        console.log(el);
+        $(el).on('click', function() {
+                currentService.removeClass('active');
+                currentService = $(this);
+                currentService.addClass('active');
+                serviceInfo.find('h3').text(services[i].title);
+                serviceInfo.find('h3').removeAttr('class');
+                serviceInfo.find('h3').addClass(services[i].title[0]);
+                serviceInfo.find('p').text(services[i].descr);
+        });
+    });
     /* page animations */
     function startAnimation(id) {
         console.log(`page${id} animation`);
@@ -66,23 +97,30 @@ window.onload = function() {
             case 0:
                 if (firstTime) {
                     firstTime = false;
-                    console.log(pagination);
                     pagination.fadeIn('slow');
                     $('.socials').fadeIn('slow');
                     $('.navbar').animate({
                         'opacity': '1'
                     }, 900);
                 }
-                $('.topic').animate({
+                $('.home__content').find('.topic').animate({
                     'padding-left': '150px',
                     'opacity': '1'
                 }, 900);
-                $('.slider').animate({
-                    'right': '80%',
+                $('.home-slider').animate({
+                    'right': '77%',
                     'opacity': '.2'
                 }, 1200);
                 $('.logo').fadeIn('slow');
                 break;
+            case 1:
+                var content = $('.about__content');
+                content.find('h1').fadeIn('slow');
+            case 2:
+                $('.services-slider').animate({
+                    'right': '-20%',
+                    'opacity': '.2'
+                }, 1200);
             default:
                 break;
         };
@@ -92,17 +130,34 @@ window.onload = function() {
         switch(id) {
             case 0:
                 if(!firstTime) {
-                    $('.topic').animate({
+                    $('.header__content').find('.topic').animate({
                         'padding-left': '-0px',
                         'opacity': '0'
                     }, 900);
                     $('.logo').fadeOut('fast');
-                    $('.slider').animate({
+                    $('.home-slider').animate({
                         'right': '0',
                         'opacity': '0'
                     }, 900);
                 }
                 break;
+            case 1:
+                var content = $('.about__content');
+                    content.find('h1').animate({
+                        'padding-left': '0px',
+                        'opacity': '0'
+                    }, 900);
+                    content.find('h1 span').animate({
+                        'padding-right': '0px',
+                        'opacity': '0'
+                    }, 900);
+                
+                break;
+            case 2: 
+                $('.services-slider').animate({
+                    'right': '-50%',
+                    'opacity': '0'
+                }, 1200);
             default:
                 break;
         };

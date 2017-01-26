@@ -25,81 +25,208 @@
     content: ''; }
   .page .content {
     height: calc(100% - 150px);
-    width: 60%;
+    width: 70%;
     padding: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    border: 3px solid red;
+    margin-top: 70px; }
+  .page .slider {
+    font-size: 15em;
+    color: #b3b3b3;
+    font-family: 'Avenir LT Std 45 Book Oblique' sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    letter-spacing: 20px; }
   .page.home {
     background-image: url("../assets/header_background_2.jpg");
     position: relative; }
-    .page.home .slider {
-      font-size: 15em;
-      color: #b3b3b3;
-      font-family: 'Avenir LT Std 45 Book Oblique' sans-serif;
-      position: absolute;
-      right: 0;
-      opacity: 0;
-      bottom: -60px;
-      letter-spacing: 10px; }
-    .page.home .home__content .logo {
-      width: 35%;
-      height: 100%;
-      position: absolute;
-      right: 20.5%;
-      top: 45px;
-      display: none; }
-      .page.home .home__content .logo svg {
-        width: 100%;
-        height: 100%; }
-    .page.home .home__content .scroll-down {
-      position: absolute;
-      bottom: 40px;
-      left: 30%;
-      color: #b3b3b3; }
-      .page.home .home__content .scroll-down .arrow {
-        transform: rotateZ(90deg);
+    .page.home .home-slider {
+      bottom: -60px; }
+    .page.home .home__content {
+      margin-top: 0; }
+      .page.home .home__content .logo {
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        right: 20.5%;
+        top: 45px;
+        display: none; }
+        .page.home .home__content .logo svg {
+          width: 100%;
+          height: 100%; }
+      .page.home .home__content .scroll-down {
+        position: absolute;
+        bottom: 40px;
+        left: 30%;
+        color: #b3b3b3; }
+        .page.home .home__content .scroll-down .arrow {
+          transform: rotateZ(90deg);
+          text-transform: uppercase;
+          width: 100px;
+          height: 18px;
+          font-size: 10px;
+          color: #646e78;
+          padding-bottom: 15px;
+          border-bottom: 3px solid #b3b3b3; }
+      .page.home .home__content .topic {
         text-transform: uppercase;
-        width: 100px;
-        height: 18px;
-        font-size: 10px;
-        color: #646e78;
-        padding-bottom: 15px;
-        border-bottom: 3px solid #b3b3b3; }
-    .page.home .home__content .topic {
-      text-transform: uppercase;
-      padding-left: 0px;
-      z-index: 2;
-      opacity: 0; }
-      .page.home .home__content .topic h1 {
+        padding-left: 0px;
+        z-index: 2;
+        opacity: 0; }
+        .page.home .home__content .topic h1 {
+          font-size: 72px;
+          font-family: 'Avenir LT Std 45 Book Oblique';
+          letter-spacing: 25px; }
+        .page.home .home__content .topic p {
+          color: #b3b3b3;
+          font-size: 14px;
+          font-family: 'Lato' sans-serif;
+          letter-spacing: 9px;
+          margin-bottom: 25px; }
+        .page.home .home__content .topic .more {
+          cursor: pointer;
+          width: 200px;
+          border-top: 3px solid #ff4200;
+          padding-top: 15px;
+          font-size: 14px;
+          font-family: 'Avenir LT Std 45 Book Oblique'; }
+          .page.home .home__content .topic .more span {
+            margin-right: 10px; }
+          .page.home .home__content .topic .more i {
+            margin-right: 10px;
+            color: #ff4200;
+            font-size: 20px;
+            line-height: 20px; }
+  .page.about {
+    position: relative; }
+    .page.about .about__content {
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
+      .page.about .about__content .helper {
+        flex: 3; }
+      .page.about .about__content h1 {
+        z-index: 2;
+        margin: 0;
         font-size: 72px;
         font-family: 'Avenir LT Std 45 Book Oblique';
-        letter-spacing: 25px; }
-      .page.home .home__content .topic p {
-        color: #b3b3b3;
-        color-size: 21px;
-        font-family: 'Lato' sans-serif;
-        letter-spacing: 9px;
-        margin-bottom: 25px; }
-      .page.home .home__content .topic .more {
-        cursor: pointer;
-        width: 200px;
-        border-top: 3px solid #ff4200;
-        padding-top: 15px;
-        font-size: 14px;
-        font-family: 'Avenir LT Std 45 Book Oblique'; }
-        .page.home .home__content .topic .more span {
-          margin-right: 10px; }
-        .page.home .home__content .topic .more i {
-          margin-right: 10px;
-          color: #ff4200;
-          font-size: 20px;
-          line-height: 20px; }
-  .page.portfolio {
-    background-image: url("../assets/portfolio_background.jpg"); }
+        text-transform: uppercase;
+        letter-spacing: 25px;
+        color: black;
+        flex: 1;
+        display: none; }
+        .page.about .about__content h1 span {
+          color: #ff4200; }
+      .page.about .about__content div {
+        width: 50%;
+        margin-left: 10%;
+        font-size: 9px;
+        flex: 3; }
+        .page.about .about__content div hr {
+          margin-top: 100px;
+          margin-left: 0; }
+        .page.about .about__content div p {
+          color: #b3b3b3; }
+    .page.about img {
+      position: absolute;
+      width: 20%;
+      z-index: 1; }
+      .page.about img:first-child {
+        left: 40%;
+        top: 20%; }
+      .page.about img:last-child {
+        left: 55%;
+        top: 40%; }
+    .page.about .letter {
+      position: absolute;
+      top: 0%;
+      color: #b3b3b3;
+      opacity: .1;
+      font-weight: bold; }
+      .page.about .letter.big {
+        left: -20px;
+        font-size: 30em;
+        text-align: top; }
+      .page.about .letter.little {
+        top: 10%;
+        left: 70%;
+        font-size: 10em; }
   .page.services {
     background-image: url("../assets/services_background.jpg"); }
+    .page.services .services__content {
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%; }
+      .page.services .services__content .services-slider {
+        right: -50%;
+        top: 60px; }
+      .page.services .services__content .helper {
+        flex: 1; }
+      .page.services .services__content .services__list {
+        width: 100%;
+        text-transform: uppercase;
+        flex: 3; }
+        .page.services .services__content .services__list h1 {
+          display: inline-block;
+          border-bottom: 2px solid #ff4200;
+          padding-bottom: 15px;
+          margin-bottom: 100px;
+          letter-spacing: 6px; }
+        .page.services .services__content .services__list ul li {
+          letter-spacing: 3px;
+          font-weight: bold;
+          font-size: 1.1em;
+          list-style: none;
+          color: #737373;
+          cursor: pointer;
+          transition: all .3s ease-in-out; }
+        .page.services .services__content .services__list ul li.active, .page.services .services__content .services__list ul li:hover {
+          color: #d3d3d3; }
+      .page.services .services__content .service-info {
+        flex: 2;
+        float: right;
+        display: flex;
+        flex-direction: row; }
+        .page.services .services__content .service-info .helper {
+          flex: 4; }
+        .page.services .services__content .service-info .info {
+          flex: 2; }
+          .page.services .services__content .service-info .info h3 {
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #d3d3d3;
+            position: relative; }
+            .page.services .services__content .service-info .info h3:before {
+              display: block;
+              position: absolute;
+              font-size: 3.5em;
+              color: #ff4200;
+              opacity: .5;
+              transition: all .3s ease-in-out; }
+            .page.services .services__content .service-info .info h3.p:before {
+              top: -26px;
+              left: -16px;
+              content: 'P'; }
+            .page.services .services__content .service-info .info h3.w:before {
+              top: -26px;
+              left: -36px;
+              content: 'W'; }
+            .page.services .services__content .service-info .info h3.i:before {
+              top: -26px;
+              left: -6px;
+              content: 'I'; }
+          .page.services .services__content .service-info .info p {
+            color: #b3b3b3;
+            font-size: 10px; }
+  .page.portfolio {
+    background-image: url("../assets/portfolio_background.jpg"); }
   .page.contact {
     background-image: url("../assets/contact_background.jpg"); }
 
