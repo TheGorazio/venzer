@@ -5,8 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
         <link rel="stylesheet" href="styles/font-awesome.min.css">
+        <link rel="stylesheet" href="fonts/Lato/lato.css">
+        <link rel="stylesheet" href="fonts/Avenir/avenir.css">
+        
         <link rel="stylesheet" href="styles/main.css">
 
         <script
@@ -166,12 +169,76 @@
         </div>
         
         <div class="page blog" id="blog">
-            <div class="blog__content content"></div>
+            <div class="blog__content content">
+                <div class="blog-slider slider">blog</div>
+                <h1>recent blog</h1>
+                <div class="blog__els">
+                    <div class="blog__img">
+                        <img src="./assets/blog.jpg" alt="blog">
+                    </div>
+                    <div class="place">
+                        <h2>ridiculus fring illa vulputate</h2>
+                        <p>some text / texx / text</p>
+                    </div>  
+                    <div class="phrases">
+                        <h3>quam sit ridiculus</h3>
+                        <p>some text / texx / text</p>
+                        <hr>
+                        <h3>ligula matus tellus</h3>
+                        <p>some text / texx / text</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="page contact" id="contact">
             <div class="mask">
-                <div class="contact__content content"></div>
+                <div class="contact__content content">
+                    <h1>contacts</h1>
+                    <div class="contact__list">
+                        <div class="email">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <h2>email</h2>
+                            <p>some@email.com</p>
+                        </div>
+                        <div class="phone">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <h2>phone</h2>
+                            <p>8-800-555-55-35</p>
+                        </div>
+                        <div class="address">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <h2>address</h2>
+                            <p>
+                                corp,<br>
+                                street,<br>
+                                city,<br>
+                                country
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="wrapper">
+                        <div class="feedback">
+                            <form action="/">
+                                <div class="form__row">
+                                    <input type="text" placeholder="Your name">
+                                    <input type="text" placeholder="Your e-mail">
+                                </div>
+                                <div class="form__row message-topic">
+                                    <input type="text" placeholder="Your topic">
+                                </div>
+                                <div class="form__row message">
+                                    <textarea name="" id="" cols="30" rows="10"  placeholder="Message"></textarea>
+                                </div>
+                                <div class="form__row">
+                                    <button type="submit" class="submitBtn">Send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

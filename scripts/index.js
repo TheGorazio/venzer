@@ -114,13 +114,38 @@ window.onload = function() {
                 $('.logo').fadeIn('slow');
                 break;
             case 1:
-                var content = $('.about__content');
-                content.find('h1').fadeIn('slow');
+                $('.about__content').find('h1').fadeIn('slow');
+                break;
             case 2:
                 $('.services-slider').animate({
                     'right': '-20%',
                     'opacity': '.2'
                 }, 1200);
+                $('.services__content h1').fadeIn('slow');
+                $('.services__content li').fadeIn('slow');
+                $('.services__content .service-info .info h3').fadeIn('slow');
+                $('.services__content .service-info .info p').fadeIn('slow');
+                break;
+            case 3:
+                $('.portfolio__content h1').fadeIn('slow');
+                $('.portfolio__content .portfolio__els .el').fadeIn('slow');
+                break;
+            case 4:
+                $('.blog-slider').animate({
+                    'right': '0%',
+                    'opacity': '.2'
+                }, 2000);
+                $('.blog__content h1').fadeIn('slow');
+                $('.blog__content .blog__els').animate({
+                    'opacity': '1'
+                }, 1000);                
+                break;
+            case 5:
+                $('.contact__content h1').fadeIn('slow');
+                setTimeout(() => {
+                    $('.contact__content .contact__list').fadeIn('slow');
+                }, 300);
+                break;
             default:
                 break;
         };
@@ -142,22 +167,34 @@ window.onload = function() {
                 }
                 break;
             case 1:
-                var content = $('.about__content');
-                    content.find('h1').animate({
-                        'padding-left': '0px',
-                        'opacity': '0'
-                    }, 900);
-                    content.find('h1 span').animate({
-                        'padding-right': '0px',
-                        'opacity': '0'
-                    }, 900);
-                
+                $('.about__content').find('h1').fadeOut('fast');                
                 break;
             case 2: 
                 $('.services-slider').animate({
                     'right': '-50%',
                     'opacity': '0'
                 }, 1200);
+                $('.services__content').find('h1').fadeOut('fast');
+                $('.services__content').find('li').fadeOut('fast');
+                $('.services__content').find('.service-info .info h3').fadeOut('fast');
+                $('.services__content').find('.service-info .info p').fadeOut('fast');
+                break;
+            case 3:
+                $('.portfolio__content').find('h1').fadeOut('fast');
+                $('.portfolio__content').find('.portfolio__els .el').fadeOut('fast');
+                break;
+            case 4:
+                $('.blog-slider').animate({
+                    'right': '-100%',
+                    'opacity': '0'
+                }, 2000);
+                $('.blog__content').find('h1').fadeOut('slow');
+                $('.blog__content .blog__els').animate({
+                    'opacity': '0'
+                }, 1000);    
+                break;
+            case 5:
+                break;
             default:
                 break;
         };
@@ -193,4 +230,28 @@ window.onload = function() {
         }, 1000);
         return false;
     };
+
+    /* form */
+    var submitBtn = $('.submitBtn'),
+        clicked = false;
+    submitBtn.on('click', function(e) {
+        e.preventDefault();
+        if (!clicked) {
+            clicked = true;
+            $(this).toggleClass('load');
+            $(this).text('');
+            setTimeout(() => {
+                $(this).toggleClass('load');
+                $(this).toggleClass('success');
+                
+                setTimeout(() => {
+                    $(this).toggleClass('success');
+                    $(this).text('Send message');
+                    
+                    clicked = false;
+                }, 1500);
+            }, 3000);
+        }
+        
+    });
 };
