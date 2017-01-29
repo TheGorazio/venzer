@@ -672,12 +672,17 @@
 .pagination {
   position: fixed;
   top: calc(50% - 100px);
-  left: 25px;
   width: 250px;
   height: 200px;
   display: none;
   text-transform: uppercase;
   font-weight: bold; }
+  @media (min-width: 900px) {
+    .pagination {
+      left: 25px; } }
+  @media (min-width: 1550px) {
+    .pagination {
+      left: 225px; } }
   .pagination li {
     display: block;
     position: relative;
@@ -817,16 +822,19 @@
           padding: 0; } }
       @media (min-width: 900px) {
         .nav-bar .navbar__menu .menu__list {
-          top: 25px;
+          top: 35px;
           left: 150%;
           width: 100px;
           font-size: 1.2em;
           background-color: transparent;
           height: 150px; } }
+      .nav-bar .navbar__menu .menu__list.inverse li {
+        color: black; }
       .nav-bar .navbar__menu .menu__list li {
         list-style: none;
         padding: 3px;
         width: auto;
+        font-weight: bold;
         text-align: center; }
       .nav-bar .navbar__menu .menu__list li:hover:after {
         width: 25px; }
@@ -876,8 +884,11 @@
       right: -55px; } }
   @media (min-width: 900px) {
     .socials {
-      top: calc(50% - 100px);
+      top: calc(50% - 80px);
       right: -45px; } }
+  @media (min-width: 1550px) {
+    .socials {
+      right: 150px; } }
   .socials ul li {
     display: block;
     padding-top: 10px;

@@ -287,12 +287,16 @@ window.onload = function() {
                 $(paginationList[currentPageId]).removeClass('active');
             }
             if (newPageId === 1 || newPageId === 4) {
-                if (device.name !== 'phone') 
+                if (device.name !== 'phone') {
+                    $('.menu__list').addClass('inverse');
                     $('.pagination').addClass('pagination_inverse');
+                }
                 $('.socials').addClass('inverse');
             } else {
-                if (device.name !== 'phone') 
+                if (device.name !== 'phone') {
+                    $('.menu__list').removeClass('inverse');
                     $('.pagination').removeClass('pagination_inverse');
+                }
                 $('.socials').removeClass('inverse');
             }
             setDefaults(currentPageId);
