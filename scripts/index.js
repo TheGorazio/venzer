@@ -86,7 +86,7 @@ window.onload = function() {
             if (device.name === 'phone') 
                 $(pImageCurrent).removeClass('show');
             
-            pImageCurrent = log(imageContainers[i]);
+            pImageCurrent = imageContainers[i];
             $(pImageCurrent).addClass('current'); 
             
             if (device.name === 'phone') 
@@ -186,6 +186,7 @@ window.onload = function() {
 
     /* pages animations */
     function startAnimation(id) {
+        if (device.name !== 'phone') {
         switch(id) {
             case 0:
                 if (firstTime) {
@@ -250,9 +251,12 @@ window.onload = function() {
             default:
                 break;
         };
+        }
     };
 
     function setDefaults(id) {
+        if (device.name !== 'phone') {
+        
         switch(id) {
             case 0:
                 if(!firstTime) {
@@ -301,6 +305,7 @@ window.onload = function() {
             default:
                 break;
         };
+        }
     }
 
 
